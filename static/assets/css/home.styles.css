@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
 :root{
     --purple:#8e44ad;
     --red:#c0392b;
@@ -14,13 +16,12 @@
  }
 
  *{
-    font-style: 'Michroma' Roboto;
+    font-family: 'Rubik', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
     transition:all .2s linear;
-    overflow-x: hidden;
  }
 
 body{
@@ -49,10 +50,17 @@ body{
  *::-webkit-scrollbar-thumb{
     background-color: var(--blue);
  }
-
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
  .underline{
    text-decoration: underline;
  }
+.logo span{
+    color:var(--blue);
+}
+
  .btn,
  .option-btn,
  .delete-btn,
@@ -78,6 +86,127 @@ body{
 .delete-btn{
    background-color: var(--red);
 }
+
+.header .header-1{
+    background-color: var(--light-bg);
+ }
+ 
+ .header .header-1 .flex{
+    padding:1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .header .header-2{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+ }
+ 
+ .header .header-2.active{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+ }
+ 
+ .header .header-2 .flex{
+    padding:1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:0 auto;
+    position: relative;
+    
+ }
+ 
+ .header .header-1 .flex .share a{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color:var(--black);
+ }
+ 
+ .header .header-1 .flex .share a:hover{
+    color:var(--blue);
+ }
+ 
+ .header .header-1 .flex p{
+    font-size: 2rem;
+    color:var(--light-color);
+ }
+ 
+ .header .header-1 .flex p a{
+    color:var(--blue);
+ }
+ 
+ .header .header-1 .flex p a:hover{
+    text-decoration: underline;
+ }
+ 
+ .header .header-2 .flex .logo{
+    font-size: 2.5rem;
+    color:var(--black);
+ }
+ 
+ .header .header-2 .flex .navbar a{
+    margin:0 1rem;
+    font-size: 2.2rem;
+    color:var(--light-color);
+ }
+ 
+ .header .header-2 .flex .navbar a:hover{
+    color:var(--blue);
+    text-decoration: underline;
+ }
+ 
+ .header .header-2 .flex .icons > *{
+    font-size: 3rem;
+    color:var(--black);
+    cursor: pointer;
+    margin-left: 1.5rem;
+ }
+ 
+ .header .header-2 .flex .icons > *:hover{
+    color:var(--blue);
+ }
+ 
+ #menu-btn{
+    display: none;
+ }
+ 
+ .header .header-2 .flex .user-box{
+    position: absolute;
+    top:120%; right:2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+ }
+ 
+ .header .header-2 .flex .user-box.active{
+    display: inline-block;
+ }
+ 
+ .header .header-2 .flex .user-box p{
+    font-size: 2rem;
+    color:var(--light-color);
+    margin-bottom: 1.5rem;
+ }
+ 
+ .header .header-2 .flex .user-box p span{
+    color:var(--blue);
+ }
+ 
+ .header .header-2 .flex .user-box .delete-btn{
+    margin-top: 0;
+ }
 /* 
 .message{
    position: sticky;

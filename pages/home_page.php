@@ -7,6 +7,7 @@ include("../inc/home_header.php");
 ?>
 <body>
 <?php include("../inc/home_nav.inc.php"); ?>
-<script src="../static//js/home.js"></script>
+
 </body>
+<script src="../static/js/home.js"></script>
 <?php include("../inc/footer.php"); ?>
