@@ -23,15 +23,6 @@
     overflow-x: hidden;
  }
 
-.register_page{
-	background-image: url(../images/01-beach.jpg);
-}
-.login_page{
-   background-image: url(../images/02-beach.jpg);
-}
-.admin_page{
-   background-image: url(../images/03-beach.jpg);
-}
 body{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -87,7 +78,7 @@ body{
 .delete-btn{
    background-color: var(--red);
 }
-
+/* 
 .message{
    position: sticky;
    top:0;
@@ -162,8 +153,38 @@ body{
 
 .form-container form p a:hover{
    text-decoration: underline;
-}
+} */
 
+@media (max-width:768px){
+
+    #menu-btn{
+       display: inline-block;
+    }
+ 
+    .header .header-2 .flex .navbar{
+       position: absolute;
+       top:99%; left:0; right:0;
+       background-color: var(--white);
+       border-top: var(--border);
+       border-bottom: var(--border);
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+ 
+    .header .header-2 .flex .navbar.active{
+       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ 
+    .header .header-2 .flex .navbar a{
+       display: block;
+       font-size: 2.5rem;
+       margin:2rem;
+    }
+ 
+    .home .content h3{
+       font-size: 3.5rem;
+    }
+ 
+ }
 @media(max-width:991px){
    html{
        font-size: 55%;
