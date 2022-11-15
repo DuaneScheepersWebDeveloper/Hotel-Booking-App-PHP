@@ -10,4 +10,8 @@ include("../inc/home_header.php");
 
 </body>
 <script src="../static/js/home.js"></script>
-<?php include("../inc/footer.php"); ?>
+
+<?php 
+include("../inc/home_footer.php"); 
+include("../inc/footer.php"); 
+?>

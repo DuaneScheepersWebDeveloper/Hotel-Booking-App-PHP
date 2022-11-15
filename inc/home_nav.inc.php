@@ -10,7 +10,7 @@
       </div>
       <p> new <a href="login_page.php">login</a> | <a href="register_page.php">register</a> </p>
    </div>
-</div>
+</div>  
 
 <div class="header-2">
    <div class="flex">
@@ -21,7 +21,7 @@
          <a href="about.php">About</a>
          <a href="Accommodations.php">Accommodations</a>
          <a href="contact.php">Contact</a>
-         <a href="orders.php">Orders</a>
+         <a href="booking_page.php">Bookings</a>
       </nav>
 
       <div class="icons">
