@@ -1,4 +1,3 @@
-
 <?php 
 if(isset($_POST['add_to_basket'])){
    $unique_id=uniqid();
@@ -17,23 +16,11 @@ if(isset($_POST['add_to_basket'])){
  
  }
 ?>
-<div class="home-background">
-<section class="home">
-   <div class="content">
-        <h3>Book your dream destination</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <a href="./../pages/about_page.php" class="btn option-btn">discover more</a>
-   </div> 
-</section>
-
-
 <section class="home-hotels">
 <div class="box-container">
     <?php 
     //hotel_nights ->quantity
-    $select_hotels = mysqli_query($connect->connect(), "SELECT * FROM `hotel` LIMIT 6") or die('query failed');
+    $select_hotels = mysqli_query($connect->connect(), "SELECT * FROM `hotel`") or die('query failed');
     if(mysqli_num_rows($select_hotels)>0){
         while($fetch_hotels= mysqli_fetch_assoc($select_hotels)){
             ?>
@@ -55,38 +42,5 @@ if(isset($_POST['add_to_basket'])){
     }
     ?>
 </div>
-<div class="load-more" style="margin-top: 2rem; text-align:center">
-      <a href="../pages/Accommodations_page.php" class="option-btn">load more</a>
-   </div>
-</section>
-
-
-<section class="about">
-
-   <div class="flex">
-
-      <div class="image">
-         <img src="../static/assets/images/pineapple.jpg" alt="">
-      </div>
-
-      <div class="content">
-         <h3>about us</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
-         <a href="about.php" class="btn option-btn">read more</a>
-      </div>
-
-   </div>
 
 </section>
-
-<section class="home-contact">
-
-   <div class="content contact-bottom">
-      <h3>have any questions?</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
-      <a href="contact.php" class="btn option-btn">contact us</a>
-   </div>
-
-</section>
-
-</div>

@@ -2,7 +2,7 @@
 //http://localhost/oop-hotel-booking-app/pages/home_page.php
 $page_title = "Home";
 //you have to put the session in
-require("../inc/page_check_home.php");
+include("../inc/page_check_home.php");
 include("../inc/home_header.php");
 ?>
 <body>
