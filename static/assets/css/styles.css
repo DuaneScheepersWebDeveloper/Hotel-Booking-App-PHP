@@ -63,6 +63,18 @@ body{
  .underline{
    text-decoration: underline;
  }
+ .cloneVago{
+   padding:5px;
+ }
+.logo{
+   font-size: 2rem;
+   color: var(--black);
+   
+ }
+ .logo span{
+   font-size: 1.8rem;
+   color: var(--blue);
+}
  .btn,
  .option-btn,
  .delete-btn,

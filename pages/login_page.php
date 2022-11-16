@@ -14,7 +14,10 @@ include("../inc/header.php");
     <div class="form-container">
    
 <form action="" method="post">
-      <h1 class="underline">Login</h1>
+   <div class="cloneVago">
+   <h1 class="logo underline">Clone<span>vago.</span></h1>
+   </div>
+      <h1 >Login</h1>
      
       <input type="email" name="login_email" placeholder="enter your email" required class="box">
       <input type="password" name="login_password" placeholder="enter your password" required class="box">

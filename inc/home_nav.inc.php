@@ -17,22 +17,22 @@
       <a href="home_page.php" class="logo">Clone<span>vago.</span></a>
 
       <nav class="navbar">
-         <a href="home.php">Home</a>
-         <a href="about.php">About</a>
-         <a href="Accommodations.php">Accommodations</a>
-         <a href="contact.php">Contact</a>
-         <a href="booking_page.php">Bookings</a>
+         <a href="home_page.php">Home</a>
+         <a href="about_page.php">About</a>
+         <a href="Accommodations_page.php">Accommodations</a>
+         <a href="contact_page.php">Contact</a>
+         <a href="bookings_page.php">Your-Bookings</a>
       </nav>
 
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
-         <a href="search_page.php" class="fas fa-search"></a>
+         <span><a href="search_page.php" class="compare fas fa-search">compare hotels</a></span>
          <div id="user-btn" class="fas fa-user"></div>
          <?php
             $select_basket_number = mysqli_query($connect->connect(), "SELECT * FROM `basket` WHERE user_id = '$user_id'") or die('query failed');
             $cart_rows_number = mysqli_num_rows($select_basket_number); 
          ?>
-         <a href="booking_page.php"> <i class="fas fa-shopping-cart"></i> <span>(<?php echo $cart_rows_number; ?>)</span> </a>
+         <a href="basket_page.php"> <i class="fas fa-shopping-cart"></i> <span>(<?php echo $cart_rows_number; ?>)</span> </a>
       </div>
 
       <div class="user-box">
