@@ -10,9 +10,9 @@ include("../inc/home_header.php");
 include("../inc/home_nav.inc.php"); 
 include("../inc/home.inc.php");
 ?>
-
-</body>
 <script src="../static/js/home.js"></script>
+</body>
+
 
 <?php 
 include("../inc/home_footer.php"); 

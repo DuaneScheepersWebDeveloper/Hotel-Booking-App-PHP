@@ -285,23 +285,6 @@ body{
    text-decoration: underline;
    color:var(--blue);
  }
- .header .header-2 .flex .user-box.active{
-    display: inline-block;
- }
- 
- .header .header-2 .flex .user-box p{
-    font-size: 2rem;
-    color:var(--light-color);
-    margin-bottom: 1.5rem;
- }
- 
- .header .header-2 .flex .user-box p span{
-    color:var(--blue);
- }
- 
- .header .header-2 .flex .user-box .delete-btn{
-    margin-top: 0;
- }
 
 
  .about .flex{

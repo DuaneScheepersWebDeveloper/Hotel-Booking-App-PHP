@@ -18,6 +18,8 @@ if(isset($_POST['add_to_basket'])){
  }
 ?>
 <div class="home-background">
+
+
 <section class="home">
    <div class="content">
         <h3>Book your dream destination</h3>

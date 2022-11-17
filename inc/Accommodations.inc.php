@@ -13,9 +13,47 @@ if(isset($_POST['add_to_basket'])){
        mysqli_query($connect->connect(), "INSERT INTO `basket`(user_id, name_hotel, price_per_night, image_hotel) VALUES('$user_id', '$hotel_name', '$hotel_price','$hotel_image')") or die('query failed');
        echo '<script>alert("Hotel booking added!")</script>';
     }
- 
+  
  }
 ?>
+<style>
+    
+ .heading{
+   min-height: 30vh;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   background:url("../static/assets/images/03-beach.jpg") no-repeat;
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+}
+
+.heading h3{
+   font-size: 3rem;
+   color:var(--white);
+   text-transform: uppercase;
+}
+
+.heading p{
+   font-size: 1.8rem;
+   color:var(--light-color);
+}
+
+.heading p a{
+   color:var(--blue);
+}
+
+.heading p a:hover{
+   text-decoration: underline;
+}
+</style>
+<div class="heading">
+   <h3>Exclusive list of Luxury Hotels</h3>
+   <p> <a href="../pages/home_page.php">home</a> / Accommodations </p>
+</div>
 <section class="home-hotels">
 <div class="box-container">
     <?php 

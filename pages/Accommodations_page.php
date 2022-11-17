@@ -9,7 +9,7 @@ include("../inc/Accommodations.inc.php");
 ?>
 
 
-
+<script src="../static/js/home.js"></script>
 </body>
 <?php 
 include("../inc/home_footer.php"); 
