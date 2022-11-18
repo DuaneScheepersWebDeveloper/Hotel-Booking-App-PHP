@@ -1,38 +1,4 @@
-<style>
 
-.heading{
-   min-height: 30vh;
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   justify-content: center;
-   gap:1rem;
-   background:url("../static/assets/images/hotel-03.jpg") no-repeat;
-   background-size: cover;
-   background-position: center;
-   text-align: center;
-}
-
-.heading h3{
-   font-size: 3rem;
-   color:var(--white);
-   text-transform: uppercase;
-}
-
-.heading p{
-   font-size: 1.8rem;
-   color:var(--white);
-}
-
-.heading p a{
-   color:var(--blue);
-}
-
-.heading p a:hover{
-   text-decoration: underline;
-}
-
-</style>
 <div class="basket-background">
 <div class="heading">
    <h3>contact us</h3>
@@ -106,11 +72,12 @@
                 <input type="submit" name="update_basket" value="Submit Details" class="btn option-btn">
             </form>
             <div class="sub-total">
-               sub total: €<?php echo $fetch_basket['num_of_guests']*$fetch_basket['price_per_night']; ?>/-
+               sub total: €<?php echo $sub_total=$fetch_basket['num_of_guests']*$fetch_basket['price_per_night']; ?>/-
             </div>
         </div>
         
         <?php
+        $grand_total += $sub_total;
         }
        }else{
         echo "<p class='empty'>You do not have any bookings at this time</p>";
@@ -118,7 +85,14 @@
        ?> 
        
     </div>
-    
+  
+    <div class="basket-sub-total">
+ 
+      <p>Grand total:<span><?php echo $grand_total?></span></p>
+      <div class="flex">
+         <a href="../pages/Accommodations_page.php" class="option-btn">continue searching for accommodations</a>
+         <a href="../pages/checkout_page.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
+      </div>
+    </div>
 </section>
 </div>
-.php?delete_all
