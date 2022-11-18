@@ -1,4 +1,4 @@
-<?php include("../inc/message.inc.php");?>
+<?php include('../inc/message.inc.php') ?>
 <header class="header">
 
 <div class="header-1">

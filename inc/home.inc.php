@@ -6,13 +6,15 @@ if(isset($_POST['add_to_basket'])){
     $hotel_price = $_POST['hotel_price'];
     $hotel_image = $_POST['hotel_image'];
  
-    $check_basket_numbers = mysqli_query($connect->connect(), "SELECT * FROM `basket` WHERE name = ' $hotel_name ' AND user_id = '$user_id'") or die('query failed');
+    $check_basket_numbers = mysqli_query($connect->connect(), "SELECT * FROM `basket` WHERE name_guest = ' $hotel_name ' AND user_id = '$user_id'") or die('query failed');
  
     if(mysqli_num_rows($check_basket_numbers) > 0){
       echo '<script>alert("Hotel already added!")</script>';
+      $message[] = 'Hotel already added!';
     }else{
        mysqli_query($connect->connect(), "INSERT INTO `basket`(user_id, name_hotel, price_per_night, image_hotel) VALUES('$user_id', '$hotel_name', '$hotel_price','$hotel_image')") or die('query failed');
-       echo '<script>alert("Hotel booking added!")</script>';
+      //  echo '<script>alert("Hotel booking added!")</script>';
+      $message[] = 'Hotel booking added!';
     }
  
  }

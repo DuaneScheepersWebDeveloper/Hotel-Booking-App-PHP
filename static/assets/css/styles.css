@@ -84,6 +84,7 @@ body{
    font-size: 1.8rem;
    color: var(--blue);
 }
+
  .btn,
  .option-btn,
  .delete-btn,
@@ -206,7 +207,7 @@ body{
 }
 @media(max-width:991px){
    html{
-       font-size: 49%;
+       font-size: 66%;
    }
 }
 

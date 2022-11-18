@@ -15,7 +15,7 @@ include("../inc/header.php");
    
 <form action="" method="post">
 <h1 class="logo underline">Clone<span>vago.</span></h1>
-      <h1>Register now</h1>
+      <h2>Register now</h2>
       <input type="text" name="login_name" placeholder="enter your name" required class="box">
       <input type="email" name="login_email" placeholder="enter your email" required class="box">
       <input type="password" name="login_password" placeholder="enter your password" required class="box">

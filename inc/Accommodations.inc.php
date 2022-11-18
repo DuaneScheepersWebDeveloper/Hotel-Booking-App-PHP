@@ -5,7 +5,7 @@ if(isset($_POST['add_to_basket'])){
     $hotel_price = $_POST['hotel_price'];
     $hotel_image = $_POST['hotel_image'];
  
-    $check_basket_numbers = mysqli_query($connect->connect(), "SELECT * FROM `basket` WHERE name = ' $hotel_name ' AND user_id = '$user_id'") or die('query failed');
+    $check_basket_numbers = mysqli_query($connect->connect(), "SELECT * FROM `basket` WHERE name_guest = ' $hotel_name ' AND user_id = '$user_id'") or die('query failed');
  
     if(mysqli_num_rows($check_basket_numbers) > 0){
       echo '<script>alert("Hotel already added!")</script>';
@@ -16,40 +16,7 @@ if(isset($_POST['add_to_basket'])){
   
  }
 ?>
-<style>
-    
- .heading{
-   min-height: 30vh;
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   justify-content: center;
-   gap:1rem;
-   background:url("../static/assets/images/03-beach.jpg") no-repeat;
-   background-size: cover;
-   background-position: center;
-   text-align: center;
-}
-
-.heading h3{
-   font-size: 3rem;
-   color:var(--white);
-   text-transform: uppercase;
-}
-
-.heading p{
-   font-size: 1.8rem;
-   color:var(--light-color);
-}
-
-.heading p a{
-   color:var(--blue);
-}
-
-.heading p a:hover{
-   text-decoration: underline;
-}
-</style>
+<div class="Accommodations-page">
 <div class="heading">
    <h3>Exclusive list of Luxury Hotels</h3>
    <p> <a href="../pages/home_page.php">home</a> / Accommodations </p>
@@ -82,3 +49,4 @@ if(isset($_POST['add_to_basket'])){
 </div>
 
 </section>
+</div>
