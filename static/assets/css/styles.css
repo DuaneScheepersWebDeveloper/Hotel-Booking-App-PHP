@@ -21,17 +21,26 @@
     text-decoration: none;
     transition:all .2s linear;
     overflow-x: hidden;
-    font-size: 65.5%;
+    font-size: 62.5%;
  }
 
 .register_page{
 	background-image: url(../images/01-beach.jpg);
+   scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 .login_page{
    background-image: url(../images/02-beach.jpg);
+   scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 .admin_page{
    background-image: url(../images/03-beach.jpg);
+   scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 body{
 	-webkit-background-size: cover;
@@ -176,6 +185,7 @@ body{
 .form-container form p a:hover{
    text-decoration: underline;
 }
+
 .heading h3{
    font-size: 5rem;
    color:var(--black);
@@ -196,7 +206,7 @@ body{
 }
 @media(max-width:991px){
    html{
-       font-size: 55%;
+       font-size: 49%;
    }
 }
 

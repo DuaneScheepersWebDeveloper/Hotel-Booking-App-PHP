@@ -179,7 +179,9 @@ body{
  .home{
    min-height: 70vh;
    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.25)), url("../images/home.jpg") no-repeat;
-   background-size: cover;
+	scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
    background-position: center;
    display: flex;
    align-items: center;
