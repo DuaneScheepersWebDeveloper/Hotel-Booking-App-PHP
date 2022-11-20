@@ -2,9 +2,10 @@
 //http://localhost/oop-hotel-booking-app/pages/login_page.php
 
 session_start();
-include('../inc/login.inc.php');
 $page_title = "Login";
 include("../inc/header.php");
+include('../inc/login.inc.php');
+
 ?>
 <body class="login_page">
 <?php 

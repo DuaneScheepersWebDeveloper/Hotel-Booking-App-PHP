@@ -1,7 +1,7 @@
 
 <div class="basket-background">
 <div class="heading">
-   <h3>contact us</h3>
+   <h3>Finalize your bookings</h3>
    <p> <a href="home.php">home</a> / basket </p>
 </div>
 

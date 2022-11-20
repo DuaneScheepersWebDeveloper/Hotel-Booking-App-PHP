@@ -4,8 +4,8 @@ include("../inc/home_header.php");
 ?>
 <body>
 <?php 
-
 include("../inc/home_nav.inc.php"); 
+include("../inc/bookings.inc.php");
 ?>
 
 </body>

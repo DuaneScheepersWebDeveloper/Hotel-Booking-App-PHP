@@ -859,47 +859,118 @@ section{
 }
 
 
+.display-order{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0;
+
+}
+.display-order-unit{
+  border:var(--border);
+  padding: 1rem;
+  margin:1.5rem;
+}
+.display-order p{
+  background-color: var(--light-bg);
+  color:var(--black);
+  font-size: 2rem;
+  padding:1rem 1.5rem;
+  border:var(--border);
+  display: inline-block;
+  margin:.5rem;
+}
+
+.display-order p span{
+  color:var(--red);
+}
+
+.display-order .grand-total{
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color:var(--light-color);
+}
+
+.display-order .grand-total span{
+  color:var(--red);
+}
 
 
+.checkout form{
+  max-width: 1200px;
+  padding:2rem;
+  margin:0 auto;
+  border:var(--border);
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+}
 
+.checkout form h3{
+  text-align: center;
+  margin-bottom: 2rem;
+  color:var(--black);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
 
+.checkout form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
 
+.checkout form .flex .inputBox{
+  flex:1 1 40rem;
+}
 
+.checkout form .flex span{
+  font-size: 2rem;
+  color:var(--black);
+}
 
+.checkout form .flex select,
+.checkout form .flex input{
+  border:var(--border);
+  width: 100%;
+  border-radius: .5rem;
+  width: 100%;
+  background-color: var(--white);
+  padding:1.2rem 1.4rem;
+  font-size: 1.8rem;
+  margin:1rem 0;
+}
 
+.placed-bookings .box-container{
+  max-width: 1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:1.5rem;
+}
 
+.placed-bookings .box-container .empty{
+  flex:1;
+}
 
+.placed-bookings .box-container .box{
+  flex:1 1 40rem;
+  border-radius: .5rem;
+  padding:2rem;
+  border:var(--border);
+  background-color: var(--light-bg);
+  padding:1rem 2rem;
+}
 
+.placed-bookings .box-container .box p{
+  padding:1rem 0;
+  font-size: 2rem;
+  color:var(--light-color);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.placed-bookings .box-container .box p span{
+  color:var(--blue);
+}
 
 
 @media (max-width: 768px) {
