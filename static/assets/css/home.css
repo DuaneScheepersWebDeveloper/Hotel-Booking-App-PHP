@@ -186,8 +186,6 @@ section{
   align-items: center;
   justify-content: center;
   gap:1rem;
-
-
   text-align: center;
 }
 .Accommodations-page .heading{
@@ -971,6 +969,7 @@ section{
 .placed-bookings .box-container .box p span{
   color:var(--blue);
 }
+
 
 
 @media (max-width: 768px) {

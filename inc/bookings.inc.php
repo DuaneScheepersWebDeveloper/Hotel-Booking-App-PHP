@@ -54,6 +54,7 @@
    <div class="box">
       <p> placed on : <span><?php echo $fetch_orders['placed_on']; ?></span> </p>
       <p> name of guest : <span><?php echo $fetch_orders['name_guest']; ?></span> </p>
+      <p> name of hotel : <span><?php echo $fetch_orders['name_hotel']; ?></span></p>
       <p> number : <span><?php echo $fetch_orders['number']; ?></span> </p>
       <p> email : <span><?php echo $fetch_orders['email']; ?></span> </p>
       <p> address : <span><?php echo $fetch_orders['address_guest']; ?></span> </p>
