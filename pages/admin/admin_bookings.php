@@ -5,12 +5,13 @@ include("../../inc/page_check.php");
 include("../../inc/admin/admin_header.php");
 
 ?>
+
 <body>
-    <?php 
+    <?php
     include("../../inc/admin/admin_nav.php");
     include("../../inc/admin/admin_booking.inc.php");
     ?>
-       
+
     <script src="../../static/js/admin.js"></script>
 </body>
 
