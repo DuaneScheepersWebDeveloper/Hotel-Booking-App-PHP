@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2022 at 06:14 PM
+-- Generation Time: Nov 21, 2022 at 07:43 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -106,7 +106,13 @@ INSERT INTO `hotel` (`id`, `name_hotel`, `price_per_night`, `image_hotel`, `hote
 (36, 'The Oyster Box', 354, 'oyster-box-southafrica-p.jpg', 'The porters wear pith helmets, even in the summer heat, at this South African institution. But with its friendly ambience, and zeal for Durban cuisine and KwaZulu art, in all their colour and spice, it is more quirky than imposing grande dame. '),
 (37, 'Camissa House', 329, 'camissa-house-cape-town-p.jpg', 'With Table Mountain in your back garden and the city at your feet, this eight-room “house hotel” combines an enviable location with sumptuous décor, on-point service and a relaxing atmosphere; the kind that invites padding about barefoot, and helping yourself to the fridge. '),
 (50, 'Lekkerwater Beach Lodge', 169, 'la-residence-south-africa-p.jpg', 'Lekkerwater Beach Lodge perches above the pearly sands and dolphin-studded waves of De Hoop Nature Reserve, just under four hours from Cape Town. Whales are the big draw but throw in spotless wild beaches, fynbos-swathed hills, delicious food and top-notch wine and you’ve got one of the country\'s best beach retreats. '),
-(51, 'test hotel', 7, 'bunny.jpg', '7');
+(52, 'Labotessa', 306, 'labotesa-cape-town-south-africa-p.jpg', 'A seven-key boutique hotel which balances old-world charm and on-point style: space and the height of chic in suites which feel like your own private pieds à terre in the CBD. One of the oldest addresses in South Africa, dating back to the 17th century, Labotessa lends an air of European townhouse to Church Square.'),
+(53, 'Compass House Bantry Bay, Cape Town, South Africa ', 289, 'compass-house-south-africa-p.jpg', '\r\n\r\nA gem that manages to combine the standards of a boutique five-star hotel with the kind of relaxed intimacy and personal service of a well-staffed private house. Mesmerising views and an atmosphere worth forfeiting the day’s sightseeing. Because why go looking, when everything you want is right here.'),
+(54, 'Emily Moon River Lodge', 190, 'emily-moon-river-lodge-south-africa-p (1).jpg', 'This nature-lover’s lair, comprising 16 cottage-suites built on a ridge overlooking the snaking Bitou River, is located just a few minutes from Plettenberg Bay. Beautiful views are augmented by eclectic contemporary Afro-chic décor, making this the best-value luxury lodge on the Garden Route. '),
+(55, 'Tintswalo Atlantic', 352, 'tintswalo-atlantic-cape-town-p.jpg', 'Tintswalo is the only luxury Cape Town hotel located within Table Mountain National Park. At the base of precipitous Chapman’s Peak, it enjoys the most sublime location in the city, right on the ocean, with mesmerising views, excellent food and authentic, warm service. '),
+(56, 'Mont Rochelle', 268, 'mont-rochelle-franschhoek-south-africa-room-p.jpg', 'The only bad thing about this great hotel is that it is so often fully booked. Perched on a vine-clad hillock with fabulous 360-degree mountain views, it has the most enviable position in Franschhoek, with beautiful gardens, décor that is both classy and hip, faultless service and generous extras.'),
+(57, 'MannaBay', 166, 'manna-bay-cape-town-p.jpg', 'This tiny luxurious Cape Town hotel, located high on the slopes of Table Mountain, offers superb city and mountain views, an intimate atmosphere, highly personal service and generous touches such as complimentary high tea, house drinks, dinner and airport transfers.'),
+(58, 'Delaire Graff Estate', 925, 'delaire-graff-estate-stellenbosch-p.jpg', 'An experience rather than a mere hotel, with a drive that sweeps upwards through a pristine garden to arrive at what is arguably the Cape’s most stupendous mountain view. Kudos to owner Graff that the art, design, wine, dining and service draw superlatives in equal measure.');
 
 -- --------------------------------------------------------
 
@@ -212,7 +218,7 @@ ALTER TABLE `bookings`
 -- AUTO_INCREMENT for table `hotel`
 --
 ALTER TABLE `hotel`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT for table `message`

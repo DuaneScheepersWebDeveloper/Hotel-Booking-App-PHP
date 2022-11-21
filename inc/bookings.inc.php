@@ -1,5 +1,14 @@
 <style>
-    
+
+    .heading h3{
+        color:var(--white);
+    }
+
+    .heading{
+  background: url(../static/assets/images/sand02.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .placed-bookings .box-container{
   max-width: 1200px;
   margin:0 auto;

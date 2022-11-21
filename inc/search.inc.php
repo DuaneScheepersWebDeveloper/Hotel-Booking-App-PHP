@@ -1,5 +1,7 @@
 <style>
-
+.search-form {
+   width: auto;
+}
     
 .search-form form{
    max-width: 1200px;
@@ -7,19 +9,56 @@
    display: flex;
    gap:1rem;
 }
+.search-form h1{
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin-bottom:2rem;
+  color: var(--blue);
+}
 
 .search-form form .btn{
    margin-top: 0;
 }
-
 .search-form form .box{
-   width: 100%;
+   text-align: center;
+   color: var(--blue);
+   
+display: grid;
+width: 100%;
    padding:1.2rem 1.4rem;
    border:var(--border);
    font-size: 2rem;
    color:var(--black);
    background-color: var(--light-bg);
    border-radius: .5rem;
+}
+.search-form form input[type="text"]{
+   margin:.5rem 0;
+   border:var(--border);
+   border-radius: .5rem;
+   padding:1.2rem 1.4rem;
+   font-size: 2rem;
+   color:var(--black);
+   margin-bottom: 1.4rem;
+   
+}
+
+.empty{
+  padding:1.5rem;
+  text-align: center;
+  border:var(--border);
+  background-color: var(--white);
+  color:var(--red);
+  font-size: 2rem;
+}
+.heading{
+  background: url(../static/assets/images/beach-rocks.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading h3{
+color:var(--white);
 }
 
 </style>
@@ -29,17 +68,24 @@
 </div>
 
 <section class="search-form">
-   <form action="" method="post">
-      <input type="text" name="search" placeholder="search hotel..." class="box">
-      <input type="submit" name="submit" value="Search by name" class="btn option-btn" >
+   <h1>Filter by price</h1>
+   <form action="" method="GET">
+      <div class="box">
+      <p for="start_price">Start Price</p>
+      <input type="text" name="start_price" value="<?php if(isset($_GET['start_price'])){echo $_GET['start_price'];}?>" placeholder="starting Price €">
+      <p for="end_price">End Price</p>
+      <input type="text" name="end_price" value="<?php if(isset($_GET['end_price'])){echo $_GET['end_price'];}?>" placeholder="Ending Price €">
+      <input type="submit" name="filter" value="filter" class=" option-btn" >
+      </div>
    </form>
 </section>
 
 
 <section class="home-hotels ">
 <?php 
+//Adding to our basket
 if(isset($_POST['add_to_basket'])){
-    $unique_id=uniqid();
+  
      $hotel_name = $_POST['hotel_name'];
      $hotel_price = $_POST['hotel_price'];
      $hotel_image = $_POST['hotel_image'];
@@ -54,12 +100,19 @@ if(isset($_POST['add_to_basket'])){
         echo '<script>alert("Hotel booking added!")</script>';
        $message[] = 'Hotel booking added!';
      }
-  
   }
+  
+//   isset($_GET['start_price']) && isset($_GET['end_price']) && isset($_POST['filter'])
 
-if(isset($_POST['submit'])){
-$search_item = $_POST['search'];
-$select_hotels = mysqli_query($connect->connect(), "SELECT * FROM `hotel` WHERE name_hotel LIKE '%{$search_item }%'") or die('query failed');
+if(isset($_GET['start_price']) && isset($_GET['end_price'])){
+
+   $startPrice= $_GET['start_price'];
+   $endPrice= $_GET['end_price'];
+
+
+
+// $search_item = $_POST['filter'];
+$select_hotels = mysqli_query($connect->connect(), "SELECT * FROM `hotel` WHERE price_per_night BETWEEN '$startPrice' AND '$endPrice' ") or die('query failed');
 if(mysqli_num_rows($select_hotels)>0){
     while($fetch_hotels= mysqli_fetch_assoc($select_hotels)){
 ?>

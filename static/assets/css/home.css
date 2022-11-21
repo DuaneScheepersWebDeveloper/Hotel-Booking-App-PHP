@@ -63,7 +63,6 @@ section{
   color: var(--blue);
 }
 
-
 .message{
   position: sticky;
   top:0;
@@ -196,8 +195,8 @@ section{
 }
 
 .heading h3{
-  font-size: 5rem;
-  color:var(--black);
+  font-size: 3rem;
+  color:var(--white);
   text-transform: uppercase;
 }
 
@@ -989,4 +988,3 @@ section{
     font-size: 50%;
   }
 }
-

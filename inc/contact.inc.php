@@ -1,3 +1,8 @@
+<style>
+    .heading h3{
+        color:var(--white);
+    }
+</style>
 <?php 
 
 if(isset($_POST['send'])){

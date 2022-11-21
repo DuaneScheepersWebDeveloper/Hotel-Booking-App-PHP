@@ -1,4 +1,15 @@
+<style>
+    .heading h3{
+        color:var(--white);
+    }
 
+    .heading{
+  background: url("../static/assets/images/parrot.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+</style>
 <div class="basket-background">
 <div class="heading">
    <h3>Finalize your bookings</h3>
