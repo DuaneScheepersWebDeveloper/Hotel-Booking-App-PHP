@@ -1,6 +1,5 @@
 <?php
 
-
 if(isset($_POST['update_booking'])){
     $booking_update_id = $_POST['booking_id'];
     $update_payment = $_POST['update_payment'];

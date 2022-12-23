@@ -1,6 +1,6 @@
 <?php
 //http://localhost/oop-hotel-booking-app/pages/login_page.php
-
+//The login page
 session_start();
 $page_title = "Login";
 include("../inc/header.php");

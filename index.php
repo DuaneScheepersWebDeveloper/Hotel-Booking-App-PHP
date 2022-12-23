@@ -7,4 +7,4 @@ include("./inc/header.php");
 header('location:./pages/login_page.php');
 ?>
 </body>
-<?php include("./inc/footer.php"); ?>
+<?php include("./inc/footer.php");?>

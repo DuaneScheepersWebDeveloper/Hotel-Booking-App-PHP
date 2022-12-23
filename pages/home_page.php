@@ -1,4 +1,5 @@
 <?php
+//P
 //http://localhost/oop-hotel-booking-app/pages/home_page.php
 $page_title = "Home";
 //you have to put the session in
